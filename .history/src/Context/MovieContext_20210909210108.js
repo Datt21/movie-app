@@ -71,7 +71,6 @@ export const MovieState = ({ children }) => {
       setShowPagination(true);
     }
     getMovies();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search, currentPage]);
 
   useEffect(() => {
