@@ -9,8 +9,7 @@ const MoviesPagination = () => {
 
   return (
     <div css={styles} className="moviesPagination">
-      {showPagination && 
-       (
+      {showPagination && (
         <Container>
           <React.Fragment>
             <button
@@ -25,8 +24,7 @@ const MoviesPagination = () => {
             <button onClick={() => newPage("next")}>Next Page</button>
           </React.Fragment>
         </Container>
-       )
-      }
+      )}
     </div>
   );
 };

@@ -8,7 +8,7 @@ const HeroNavLink = ({ btnText }) => {
 
   return (
     <button
-      style={{ color: activeLink === btnText ? "#ff6f61" : "#fff" }}
+      style={{ color: activeLink === btnText ? "#f9a5ff" : "#fff" }}
       css={styles}
       onClick={() => {
         setActiveLink(btnText);

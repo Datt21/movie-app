@@ -22,7 +22,6 @@ export const MovieState = ({ children }) => {
 
   const API_KEY = "9d4fbae6d45a1f406cc115a66a4de03d";
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getMovies = async () => {
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=${currentPage}`
@@ -72,7 +71,8 @@ export const MovieState = ({ children }) => {
       setShowPagination(true);
     }
     getMovies();
-  }, [search, currentPage, getMovies]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search, currentPage]);
 
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
